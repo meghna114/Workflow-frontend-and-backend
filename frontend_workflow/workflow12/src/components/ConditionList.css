@@ -1,0 +1,94 @@
+/* src/components/ConditionList.css */
+
+/* Container for the entire component */
+.condition-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-aligns the content horizontally */
+  padding: 30px; /* Adds more padding around the container for better spacing */
+  background-color: #f4f4f4; /* Slightly darker background for contrast */
+  border-radius: 8px; /* Adds rounded corners to the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  max-width: 800px; /* Limits the width of the container */
+  margin: auto; /* Centers the container horizontally */
+}
+
+/* Style for the heading */
+.condition-list-container h1 {
+  text-align: center; /* Center-aligns the heading text */
+  margin-bottom: 20px; /* Adds space below the heading */
+  font-size: 28px; /* Slightly larger font size for emphasis */
+  color: #333; /* Dark color for readability */
+}
+
+/* Style for the workflow name input field */
+.workflow-name-input {
+  width: 100%;
+  max-width: 500px; /* Limits the width of the input field */
+  padding: 12px; /* Adds padding inside the input field */
+  margin-bottom: 30px; /* Adds extra space below the input field */
+  border: 1px solid #ccc; /* Light border color */
+  border-radius: 5px; /* Rounds the corners of the input field */
+  font-size: 16px; /* Sets font size for input text */
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+/* Style for condition rows */
+.condition-row {
+  display: flex;
+  align-items: center; /* Vertically aligns items in the row */
+  margin-bottom: 15px; /* Adds space between rows */
+  padding: 12px; /* Adds padding inside each row */
+  background-color: #fff; /* White background for each row */
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 5px; /* Rounds the corners of each row */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each row */
+  width: 100%; /* Ensures rows take full width of the container */
+  max-width: 500px; /* Limits the width of each row */
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+/* Style for select inputs and text inputs within condition rows */
+.condition-row select,
+.condition-row input {
+  margin-right: 15px; /* Adds space between inputs */
+  padding: 8px; /* Adds padding inside inputs */
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 5px; /* Rounds the corners of inputs */
+  font-size: 16px; /* Sets font size for input text */
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+/* Style for error and success messages */
+.error-message {
+  color: #dc3545; /* Bright red for error messages */
+  font-size: 14px;
+  margin-top: 15px; /* Adds space above the error message */
+  text-align: center; /* Center-aligns the error message */
+}
+
+.success-message {
+  color: #28a745; /* Bright green for success messages */
+  font-size: 14px;
+  margin-top: 15px; /* Adds space above the success message */
+  text-align: center; /* Center-aligns the success message */
+}
+
+/* Style for buttons */
+.button {
+  display: inline-block; /* Ensures buttons are aligned inline */
+  margin: 10px; /* Adds space between buttons */
+  padding: 12px 24px; /* Adds padding inside buttons */
+  font-size: 16px; /* Sets font size for buttons */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounds the corners of buttons */
+  background-color: #007bff; /* Sets a background color */
+  color: white; /* Sets text color */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background color and scaling effect */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Changes background color on hover */
+  transform: scale(1.05); /* Slightly scales up the button on hover */
+}
